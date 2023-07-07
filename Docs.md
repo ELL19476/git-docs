@@ -1,10 +1,10 @@
-```## git init```
+```# git init```
 
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
 ---
 
-```### Important Flags```
+```## Important Flags```
 
 - ```--bare``` Create a bare repository. If GIT_DIR environment is not set, it is set to the current working directory.
 
