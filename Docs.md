@@ -7,3 +7,8 @@ This command creates an empty Git repository on your local machine. So, basicall
 - ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
 - ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
 
+## git rm -- cached <filename>
+This command removes the file from the tracked status
+
+### Important Flags
+- ```-r``` removes the folder from the tracked status
