@@ -17,20 +17,20 @@ git-stash - Stash the changes in a dirty working directory away
 ```clear``` Remove all the stash entries. 
 ```list``` List the stash entries that you currently have.
 =======
-## Make git add, git commit, git push --> Automatic in one command
-# touch .bashrc
-# nano .bashrc
+# Make git add, git commit, git push --> Automatic in one command
+### touch .bashrc
+### nano .bashrc
+###
+### function doit() {
+### 	git add .
+###	git commit -a -m "$1"
+###	git push
+### }
+###
+###(type Strg + x)
+###(type y)
+###(hit enter)
+###type in source .bashrc
+##now you can do ...  doit "a new message"
+##when you start your bash again you must do the ```source .bashrc``` again!
 
-# function doit() {
-# 	git add .
-#	git commit -a -m "$1"
-#	git push
-# }
-#
-#(type Strg + x)
-#(type y)
-#(hit enter)
-#type in source .bashrc
-#now you can do ...  doit "a new message"
-### when you start your bash again you must do the ```source .bashrc``` again!
->>>>>>> b457903d8eaeff53a5cc6273fe7379fadea00092
