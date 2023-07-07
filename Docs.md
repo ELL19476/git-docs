@@ -7,3 +7,6 @@ This command creates an empty Git repository on your local machine. So, basicall
 - ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
 - ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
 
+
+## git merge
+This command merges changes from one branch into another branch.
