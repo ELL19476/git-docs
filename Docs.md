@@ -18,6 +18,17 @@ This command lists the history of git commits. The first one listed is the last 
 - ```--stat``` lists everything and shows the files with the exact number of changes
 - ```-n``` n stands for a number you choose. Then lists the recent n commits made
 
+
+## git add
+The "add" command marks changes to be included in the next commit.
+It adds changes to Git's "Staging Area", the contents of which can then be wrapped up in a new revision with the "git commit" command.
+
+### Important Flags for git add
+
+```--all``` Adds all modifications to the Staging Area. This includes changed files, deleted files, and new files - anywhere inside the project directory.
+
+```-u``` Adds all changes to existing files to the Staging Area. This includes changed files and deleted files - but not new files that aren't currently tracked by Git.  
+
 ### Important Flags
 - ```-m``` Stands for "message". Is used to add a commit message to a commit.
 - ```-a``` Tells Git to add all files that have been modified and then commit them. 
@@ -61,6 +72,7 @@ git-stash - Stash the changes in a dirty working directory away
 ```list``` List the stash entries that you currently have.
 
 ## Make git add, git commit, git push --> Automatic in one command
+
 ### touch .bashrc
 ### nano .bashrc
 ###
