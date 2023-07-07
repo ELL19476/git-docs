@@ -3,6 +3,9 @@
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
 
+## git checkout
+Switch branches or restore working tree files
+
 ---
 ## git commit
 This command performs a commit, it's used to save changes to the local repository.
@@ -24,6 +27,7 @@ This command performs a commit, it's used to save changes to the local repositor
 
 ## git push
 The git push command is used to upload local repository content to a remote repository.
+
 
 ### Important Flags
 - ```-u``` or ```--set-upstream``` Set the upstream.
@@ -99,10 +103,7 @@ git-stash - Stash the changes in a dirty working directory away
 ### now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
 
->>>>>>> refs/remotes/origin/main
-=======
->>>>>>> e691af77b4fd6c7012e254eb7315e3c7a142764f
-=======
+
 ``` touch .bashrc
 ``` nano .bashrc
 
