@@ -1,11 +1,9 @@
-# Useful git commands
+# git init
 
-## git init
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
-### Important Flags
-- ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
-- ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
+---
+
 
 
 ## git log
@@ -18,11 +16,23 @@ This command lists the history of git commits. The first one listed is the last 
 - ```--stat``` lists everything and shows the files with the exact number of changes
 - ```-n``` n stands for a number you choose. Then lists the recent n commits made
 
+## Important Flags
+
+- ```--bare``` Create a bare repository. If GIT_DIR environment is not set, it is set to the current working directory.
+
+---
+
+- ```--shared[=(false|true|umask|group|all|world|everybody|<perm>)]``` Specify that the Git repository is to be shared amongst several users. This allows users belonging to the same group to push into that repository. When specified, the config variable "core.sharedRepository" is set so that files and directories under $GIT_DIR are created with the requested permissions. When not specified, Git will use permissions reported by umask(2).
+
+---
+=======
+
 ## git push
 The git push command is used to upload local repository content to a remote repository.
 
 ### Important Flags
 - ```-u``` or ```--set-upstream``` Set the upstream.
+
 
 ## git clone
 This command is used to create a copy of a Git repository  on your local machine, including all its files, commit history, and branches. It allows you to download and have a complete, editable version of the repository that you can work with and contribute to.
@@ -77,4 +87,3 @@ git-stash - Stash the changes in a dirty working directory away
 ### Usage: git reset [file]  
 
 This command unstages the file, but it preserves the file contents.
-
