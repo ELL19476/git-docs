@@ -15,19 +15,29 @@ This command is used to create a copy of a Git repository  on your local machine
 - ```--depth``` This flag allows you to specify the number of commits to include in the cloned repository, which can make the cloning process faster and use less disk space. 
 - ```--branch``` This flag lets you specify a particular branch to clone instead of the default branch.
 
+
+## git stash 
+git-stash - Stash the changes in a dirty working directory away
+
+### Important Optionen
+```pop``` Remove a single stashed state from the stash list and apply it on top of the current working tree state,
+```apply``` Like ```pop```, but do not remove the state from the stash list. 
+```clear``` Remove all the stash entries. 
+```list``` List the stash entries that you currently have.
+
 ## Make git add, git commit, git push --> Automatic in one command
-touch .bashrc
-nano .bashrc
+# touch .bashrc
+# nano .bashrc
 
-function doit() {
-	git add .
-	git commit -a -m "$1"
-	git push
-}
-
-(type Strg + x)
-(type y)
-(hit enter)
-type in source .bashrc
-now you can do ...  doit "a new message"
+# function doit() {
+# 	git add .
+#	git commit -a -m "$1"
+#	git push
+# }
+#
+#(type Strg + x)
+#(type y)
+#(hit enter)
+#type in source .bashrc
+#now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
