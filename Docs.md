@@ -88,8 +88,7 @@ git-stash - Stash the changes in a dirty working directory away
 
 ### touch .bashrc
 ### nano .bashrc
-###
-### function doit() {
+###### function doit() {
 ### 	git add .
 ### 	git commit -a -m "$1"
 ###	    git push
@@ -118,7 +117,7 @@ git-stash - Stash the changes in a dirty working directory away
 #type in source .bashrc
 #now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
-<<<<<<< HEAD
+
 ### (type Strg + x)
 ### (type y)
 ### (hit enter)
