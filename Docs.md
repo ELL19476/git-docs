@@ -7,6 +7,11 @@ This command creates an empty Git repository on your local machine. So, basicall
 - ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
 - ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
 
+## git push
+The git push command is used to upload local repository content to a remote repository.
+
+### Important Flags
+- ```-u``` or ```--set-upstream``` Set the upstream.
 
 ## git ls-tree -r main
 The command ```git ls-tree -r main``` is used to list the contents of the specified branch (main in this case) recursively. It displays the tree objects and file names in the repository.
@@ -23,7 +28,6 @@ This command is used to create a copy of a Git repository  on your local machine
 - ```--depth``` This flag allows you to specify the number of commits to include in the cloned repository, which can make the cloning process faster and use less disk space. 
 - ```--branch``` This flag lets you specify a particular branch to clone instead of the default branch.
 
-
 ## git stash 
 git-stash - Stash the changes in a dirty working directory away
 
@@ -32,6 +36,23 @@ git-stash - Stash the changes in a dirty working directory away
 ```apply``` Like ```pop```, but do not remove the state from the stash list. 
 ```clear``` Remove all the stash entries. 
 ```list``` List the stash entries that you currently have.
+
+# Make git add, git commit, git push --> Automatic in one command
+### touch .bashrc
+### nano .bashrc
+###
+### function doit() {
+### 	git add .
+###	git commit -a -m "$1"
+###	git push
+### }
+###
+###(type Strg + x)
+###(type y)
+###(hit enter)
+###type in source .bashrc
+##now you can do ...  doit "a new message"
+##when you start your bash again you must do the ```source .bashrc``` again!
 
 
 ## Make git add, git commit, git push --> Automatic in one command
@@ -54,4 +75,5 @@ git-stash - Stash the changes in a dirty working directory away
 ### Usage: git reset [file]  
 
 This command unstages the file, but it preserves the file contents.
+
 
