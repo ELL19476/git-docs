@@ -10,6 +10,16 @@ Switch branches or restore working tree files
 ## git commit
 This command performs a commit, it's used to save changes to the local repository.
 
+## git add
+The "add" command marks changes to be included in the next commit.
+It adds changes to Git's "Staging Area", the contents of which can then be wrapped up in a new revision with the "git commit" command.
+
+### Important Flags for git add
+
+```--all``` Adds all modifications to the Staging Area. This includes changed files, deleted files, and new files - anywhere inside the project directory.
+
+```-u``` Adds all changes to existing files to the Staging Area. This includes changed files and deleted files - but not new files that aren't currently tracked by Git.  
+
 ### Important Flags
 - ```-m``` Stands for "message". Is used to add a commit message to a commit.
 - ```-a``` Tells Git to add all files that have been modified and then commit them. 
@@ -33,8 +43,10 @@ The git push command is used to upload local repository content to a remote repo
 - ```-u``` or ```--set-upstream``` Set the upstream.
 
 
+
 ## git merge
 This command merges changes from one branch into another branch.
+
 
 ## git ls-tree -r main
 The command ```git ls-tree -r main``` is used to list the contents of the specified branch (main in this case) recursively. It displays the tree objects and file names in the repository.
@@ -62,7 +74,7 @@ git-stash - Stash the changes in a dirty working directory away
 ```list``` List the stash entries that you currently have.
 
 ## Make git add, git commit, git push --> Automatic in one command
-<<<<<<< HEAD
+
 ### touch .bashrc
 ### nano .bashrc
 ###
@@ -96,12 +108,15 @@ git-stash - Stash the changes in a dirty working directory away
 #type in source .bashrc
 #now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
+<<<<<<< HEAD
 ### (type Strg + x)
 ### (type y)
 ### (hit enter)
 ### type in source .bashrc
 ### now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
+
+
 
 
 ``` touch .bashrc
@@ -120,6 +135,11 @@ git-stash - Stash the changes in a dirty working directory away
 
 ## now you can do ...  doit "a new message"
 ## when you start your bash again you must do the ```source .bashrc``` again!
+
+
+### Usage: git reset [file]  
+
+This command unstages the file, but it preserves the file contents.
 
 
 ### Usage: git reset [file]  
