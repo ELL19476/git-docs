@@ -113,32 +113,7 @@ function doit() {
 - now you can run ```doit "a new message"```
 - when you start your bash again you must do the ```source .bashrc``` again!
 
-<<<<<<< HEAD
-## Make git add, git commit, git push --> Automatic in one command
-``` touch .bashrc```
-``` nano .bashrc```
-
-``` function doit() {```
-``` 	git add .```
-``` 	git commit -a -m "$1"```
-```	git push```
-``` }```
-
-``` (type Strg + x)```
-``` (type y)```
-``` (hit enter)```
-``` type in source .bashrc```
-
-### now you can do ...  doit "a new message"
-### when you start your bash again you must do the ```source .bashrc``` again!
-
----
-
-
-### Usage: git reset [file]  
-=======
 ## git reset [file]  
->>>>>>> fabad63aaa5e771d3d21a182678e0a7e105f966a
 
 This command unstages the file, but it preserves the file contents.
 
