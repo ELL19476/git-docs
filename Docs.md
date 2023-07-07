@@ -7,26 +7,43 @@ This command creates an empty Git repository on your local machine. So, basicall
 - ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
 - ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
 
+<<<<<<< HEAD
 ## git push
 The git push command is used to upload local repository content to a remote repository.
 
 ### Important Flags
 - ```-u``` or ```--set-upstream``` Set the upstream.
 
+=======
+<<<<<<< HEAD
+## git stash 
+git-stash - Stash the changes in a dirty working directory away
+
+### Important Optionen
+```pop``` Remove a single stashed state from the stash list and apply it on top of the current working tree state,
+```apply``` Like ```pop```, but do not remove the state from the stash list. 
+```clear``` Remove all the stash entries. 
+```list``` List the stash entries that you currently have.
+=======
+>>>>>>> refs/remotes/origin/main
 ## Make git add, git commit, git push --> Automatic in one command
-touch .bashrc
-nano .bashrc
+# touch .bashrc
+# nano .bashrc
 
-function doit() {
-	git add .
-	git commit -a -m "$1"
-	git push
-}
-
-(type Strg + x)
-(type y)
-(hit enter)
-type in source .bashrc
-now you can do ...  doit "a new message"
+# function doit() {
+# 	git add .
+#	git commit -a -m "$1"
+#	git push
+# }
+#
+#(type Strg + x)
+#(type y)
+#(hit enter)
+#type in source .bashrc
+#now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
+<<<<<<< HEAD
 
+=======
+>>>>>>> b457903d8eaeff53a5cc6273fe7379fadea00092
+>>>>>>> refs/remotes/origin/main
