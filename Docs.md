@@ -2,17 +2,33 @@
 
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
+## git checkout
+Switch branches or restore working tree files
+
 ---
 ## git commit
 This command performs a commit, it's used to save changes to the local repository.
 
+## git add
+The "add" command marks changes to be included in the next commit.
+It adds changes to Git's "Staging Area", the contents of which can then be wrapped up in a new revision with the "git commit" command.
+
+### Important Flags for git add
+
+```--all``` Adds all modifications to the Staging Area. This includes changed files, deleted files, and new files - anywhere inside the project directory.
+
+```-u``` Adds all changes to existing files to the Staging Area. This includes changed files and deleted files - but not new files that aren't currently tracked by Git.  
+=======
 ### Important Flags
 - ```-m``` Stands for "message". Is used to add a commit message to a commit.
 - ```-a``` Tells Git to add all files that have been modified and then commit them. 
 
 
+<<<<<<< HEAD
 
 >>>>>>> bfbf5a2dfbde65b9f8c7308f976b18ffbebf411b
+=======
+>>>>>>> fdacb72e4b9f32000bd0f96f50bb8618c9da5eea
 ## Important Flags
 
 - ```--bare``` Create a bare repository. If GIT_DIR environment is not set, it is set to the current working directory.
@@ -21,22 +37,13 @@ This command performs a commit, it's used to save changes to the local repositor
 
 - ```--shared[=(false|true|umask|group|all|world|everybody|<perm>)]``` Specify that the Git repository is to be shared amongst several users. This allows users belonging to the same group to push into that repository. When specified, the config variable "core.sharedRepository" is set so that files and directories under $GIT_DIR are created with the requested permissions. When not specified, Git will use permissions reported by umask(2).
 
-<<<<<<< HEAD
----
-=======
-<<<<<<< HEAD
->>>>>>> e691af77b4fd6c7012e254eb7315e3c7a142764f
-=======
-
->>>>>>> bfbf5a2dfbde65b9f8c7308f976b18ffbebf411b
 ## git push
 The git push command is used to upload local repository content to a remote repository.
+>>>>>>> 2dd91e5be431c7c9429f55e800099249cc427d96
 
 ### Important Flags
 - ```-u``` or ```--set-upstream``` Set the upstream.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## git ls-tree -r main
 The command ```git ls-tree -r main``` is used to list the contents of the specified branch (main in this case) recursively. It displays the tree objects and file names in the repository.
 
@@ -44,6 +51,7 @@ The command ```git ls-tree -r main``` is used to list the contents of the specif
 - ```-r``` Recurse into sub-trees.
 - ```-l```  Show object size of blob (file) entries.
 
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -60,6 +68,8 @@ delete the file from project and stage the remowal for commit
 - ```--cached``` Removes the file only from the Git repository, but not from the filesystem.
 
 
+=======
+>>>>>>> fdacb72e4b9f32000bd0f96f50bb8618c9da5eea
 ## git clone
 This command is used to create a copy of a Git repository  on your local machine, including all its files, commit history, and branches. It allows you to download and have a complete, editable version of the repository that you can work with and contribute to.
 
@@ -67,10 +77,6 @@ This command is used to create a copy of a Git repository  on your local machine
 - ```--depth``` This flag allows you to specify the number of commits to include in the cloned repository, which can make the cloning process faster and use less disk space. 
 - ```--branch``` This flag lets you specify a particular branch to clone instead of the default branch.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bfbf5a2dfbde65b9f8c7308f976b18ffbebf411b
 ## git stash 
 git-stash - Stash the changes in a dirty working directory away
 
@@ -81,7 +87,7 @@ git-stash - Stash the changes in a dirty working directory away
 ```list``` List the stash entries that you currently have.
 
 ## Make git add, git commit, git push --> Automatic in one command
-<<<<<<< HEAD
+
 ### touch .bashrc
 ### nano .bashrc
 ###
@@ -91,7 +97,6 @@ git-stash - Stash the changes in a dirty working directory away
 ###	    git push
 ### }
 ###
-<<<<<<< HEAD
 ###(type Strg + x)
 ###(type y)
 ###(hit enter)
@@ -116,18 +121,7 @@ git-stash - Stash the changes in a dirty working directory away
 #type in source .bashrc
 #now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
-=======
-### (type Strg + x)
-### (type y)
-### (hit enter)
-### type in source .bashrc
-### now you can do ...  doit "a new message"
-### when you start your bash again you must do the ```source .bashrc``` again!
 
->>>>>>> refs/remotes/origin/main
-=======
->>>>>>> e691af77b4fd6c7012e254eb7315e3c7a142764f
-=======
 ``` touch .bashrc
 ``` nano .bashrc
 
@@ -145,11 +139,9 @@ git-stash - Stash the changes in a dirty working directory away
 ## now you can do ...  doit "a new message"
 ## when you start your bash again you must do the ```source .bashrc``` again!
 
-
->>>>>>> bfbf5a2dfbde65b9f8c7308f976b18ffbebf411b
-
 ### Usage: git reset [file]  
 
+<<<<<<< HEAD
 This command unstages the file, but it preserves the file contents.
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -170,3 +162,6 @@ This command unstages the file, but it preserves the file contents.
 
 >>>>>>> bfbf5a2dfbde65b9f8c7308f976b18ffbebf411b
 >>>>>>> dd941d5e735d8f49c5371dbd0b7bc19934660814
+=======
+This command unstages the file, but it preserves the file contents.
+>>>>>>> fdacb72e4b9f32000bd0f96f50bb8618c9da5eea
