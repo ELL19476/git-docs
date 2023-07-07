@@ -2,6 +2,9 @@
 
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
+## git checkout
+Switch branches or restore working tree files
+=======
 ---
 ## git commit
 This command performs a commit, it's used to save changes to the local repository.
@@ -31,6 +34,7 @@ It adds changes to Git's "Staging Area", the contents of which can then be wrapp
 
 ## git push
 The git push command is used to upload local repository content to a remote repository.
+>>>>>>> 2dd91e5be431c7c9429f55e800099249cc427d96
 
 ### Important Flags
 - ```-u``` or ```--set-upstream``` Set the upstream.
