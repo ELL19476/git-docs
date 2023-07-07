@@ -51,3 +51,7 @@ git-stash - Stash the changes in a dirty working directory away
 #now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
 
+### Usage: git reset [file]  
+
+This command unstages the file, but it preserves the file contents.
+
