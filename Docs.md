@@ -12,4 +12,22 @@ The command ```git ls-tree -r main``` is used to list the contents of the specif
 
 ### Important Flags
 - ```-r``` Recurse into sub-trees.
--```-l```  Show object size of blob (file) entries.
+- ```-l```  Show object size of blob (file) entries.
+
+## Make git add, git commit, git push --> Automatic in one command
+touch .bashrc
+nano .bashrc
+
+function doit() {
+	git add .
+	git commit -a -m "$1"
+	git push
+}
+
+(type Strg + x)
+(type y)
+(hit enter)
+type in source .bashrc
+now you can do ...  doit "a new message"
+### when you start your bash again you must do the ```source .bashrc``` again!
+
