@@ -2,7 +2,6 @@
 
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
-<<<<<<< HEAD
 ## git checkout
 Switch branches or restore working tree files
 =======
