@@ -25,6 +25,9 @@ Switch branches or restore working tree files
 ## git commit
 This command performs a commit, it's used to save changes to the local repository.
 
+## git status
+Shows the current state of the repository, including modified files and files in the staging area.
+
 ## git log
 This command lists the history of git commits. The first one listed is the last commit
 
