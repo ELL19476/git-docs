@@ -46,8 +46,6 @@ It adds changes to Git's "Staging Area", the contents of which can then be wrapp
 - ```-m``` Stands for "message". Is used to add a commit message to a commit.
 - ```-a``` Tells Git to add all files that have been modified and then commit them. 
 
-
-
 ## Important Flags
 
 - ```--bare``` Create a bare repository. If GIT_DIR environment is not set, it is set to the current working directory.
@@ -77,6 +75,11 @@ The command ```git ls-tree -r main``` is used to list the contents of the specif
 - ```-r``` Recurse into sub-trees.
 - ```-l```  Show object size of blob (file) entries.
 
+## git rm [file]
+delete the file from project and stage the remowal for commit
+
+### Important Flags
+- ```--cached``` Removes the file only from the Git repository, but not from the filesystem.
 
 ## git clone
 This command is used to create a copy of a Git repository  on your local machine, including all its files, commit history, and branches. It allows you to download and have a complete, editable version of the repository that you can work with and contribute to.
@@ -166,45 +169,9 @@ git-stash - Stash the changes in a dirty working directory away
 
 ### Usage: git reset [file]  
 
-This command unstages the file, but it preserves the file contents.
-
-
 ### Usage: git reset [file]  
 
 This command unstages the file, but it preserves the file contents.
-
-## git clone
-This command is used to create a copy of a Git repository  on your local machine, including all its files, commit history, and branches. It allows you to download and have a complete, editable version of the repository that you can work with and contribute to.
-
-### Important Flags
-- ```--depth``` This flag allows you to specify the number of commits to include in the cloned repository, which can make the cloning process faster and use less disk space. 
-- ```--branch``` This flag lets you specify a particular branch to clone instead of the default branch.
-
-## git stash 
-git-stash - Stash the changes in a dirty working directory away
-
-### Important Optionen
-```pop``` Remove a single stashed state from the stash list and apply it on top of the current working tree state,
-```apply``` Like ```pop```, but do not remove the state from the stash list. 
-```clear``` Remove all the stash entries. 
-```list``` List the stash entries that you currently have.
-
-## Make git add, git commit, git push --> Automatic in one command
-# touch .bashrc
-# nano .bashrc
-
-# function doit() {
-# 	git add .
-#	git commit -a -m "$1"
-#	git push
-# }
-#
-#(type Strg + x)
-#(type y)
-#(hit enter)
-#type in source .bashrc
-#now you can do ...  doit "a new message"
-### when you start your bash again you must do the ```source .bashrc``` again!
 
 ## git restore --staged <filename>
 This command removes the file from the tracked status
