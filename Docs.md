@@ -4,6 +4,7 @@ This command creates an empty Git repository on your local machine. So, basicall
 
 ---
 
+<<<<<<< HEAD
 ## Important Flags
 
 - ```--bare``` Create a bare repository. If GIT_DIR environment is not set, it is set to the current working directory.
@@ -13,3 +14,43 @@ This command creates an empty Git repository on your local machine. So, basicall
 - ```--shared[=(false|true|umask|group|all|world|everybody|<perm>)]``` Specify that the Git repository is to be shared amongst several users. This allows users belonging to the same group to push into that repository. When specified, the config variable "core.sharedRepository" is set so that files and directories under $GIT_DIR are created with the requested permissions. When not specified, Git will use permissions reported by umask(2).
 
 ---
+=======
+
+## git clone
+This command is used to create a copy of a Git repository  on your local machine, including all its files, commit history, and branches. It allows you to download and have a complete, editable version of the repository that you can work with and contribute to.
+
+### Important Flags
+- ```--depth``` This flag allows you to specify the number of commits to include in the cloned repository, which can make the cloning process faster and use less disk space. 
+- ```--branch``` This flag lets you specify a particular branch to clone instead of the default branch.
+
+
+## git stash 
+git-stash - Stash the changes in a dirty working directory away
+
+### Important Optionen
+```pop``` Remove a single stashed state from the stash list and apply it on top of the current working tree state,
+```apply``` Like ```pop```, but do not remove the state from the stash list. 
+```clear``` Remove all the stash entries. 
+```list``` List the stash entries that you currently have.
+
+## Make git add, git commit, git push --> Automatic in one command
+# touch .bashrc
+# nano .bashrc
+
+# function doit() {
+# 	git add .
+#	git commit -a -m "$1"
+#	git push
+# }
+#
+#(type Strg + x)
+#(type y)
+#(hit enter)
+#type in source .bashrc
+#now you can do ...  doit "a new message"
+### when you start your bash again you must do the ```source .bashrc``` again!
+
+### Usage: git reset [file]  
+
+This command unstages the file, but it preserves the file contents.
+>>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
