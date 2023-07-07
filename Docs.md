@@ -5,9 +5,21 @@ This command creates an empty Git repository on your local machine. So, basicall
 ## git checkout
 Switch branches or restore working tree files
 
+>>>>>>> 53bbe7c74217f9dbbaee91d3b7e271096a788a06
 ---
 ## git commit
 This command performs a commit, it's used to save changes to the local repository.
+
+## git log
+This command lists the history of git commits. The first one listed is the last commit
+
+### Important Flags
+- ```--oneline``` lists the whole log and each commit takes only one line
+- ```--merges``` lists just the merge commits made
+- ```--no-merges``` lists everything but the merges
+- ```--stat``` lists everything and shows the files with the exact number of changes
+- ```-n``` n stands for a number you choose. Then lists the recent n commits made
+
 
 ## git add
 The "add" command marks changes to be included in the next commit.
@@ -18,7 +30,7 @@ It adds changes to Git's "Staging Area", the contents of which can then be wrapp
 ```--all``` Adds all modifications to the Staging Area. This includes changed files, deleted files, and new files - anywhere inside the project directory.
 
 ```-u``` Adds all changes to existing files to the Staging Area. This includes changed files and deleted files - but not new files that aren't currently tracked by Git.  
-=======
+
 ### Important Flags
 - ```-m``` Stands for "message". Is used to add a commit message to a commit.
 - ```-a``` Tells Git to add all files that have been modified and then commit them. 
@@ -39,7 +51,6 @@ It adds changes to Git's "Staging Area", the contents of which can then be wrapp
 
 ## git push
 The git push command is used to upload local repository content to a remote repository.
->>>>>>> 2dd91e5be431c7c9429f55e800099249cc427d96
 
 ### Important Flags
 - ```-u``` or ```--set-upstream``` Set the upstream.
@@ -104,7 +115,6 @@ git-stash - Stash the changes in a dirty working directory away
 ##now you can do ...  doit "a new message"
 ##when you start your bash again you must do the ```source .bashrc``` again!
 
-
 ## Make git add, git commit, git push --> Automatic in one command
 # touch .bashrc
 # nano .bashrc
@@ -120,6 +130,13 @@ git-stash - Stash the changes in a dirty working directory away
 #(hit enter)
 #type in source .bashrc
 #now you can do ...  doit "a new message"
+### when you start your bash again you must do the ```source .bashrc``` again!
+
+### (type Strg + x)
+### (type y)
+### (hit enter)
+### type in source .bashrc
+### now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
 
 ``` touch .bashrc
