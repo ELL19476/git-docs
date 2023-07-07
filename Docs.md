@@ -7,3 +7,19 @@ This command creates an empty Git repository on your local machine. So, basicall
 - ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
 - ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
 
+## Make git add, git commit, git push --> Automatic in one command
+touch .bashrc
+nano .bashrc
+
+function doit() {
+	git add .
+	git commit -a -m "$1"
+	git push
+}
+
+(type Strg + x)
+(type y)
+(hit enter)
+type in source .bashrc
+now you can do ...  doit "a new message"
+### when you start your bash again you must do the ```source .bashrc``` again!
