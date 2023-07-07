@@ -8,6 +8,7 @@ This command creates an empty Git repository on your local machine. So, basicall
 - ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## git push
 The git push command is used to upload local repository content to a remote repository.
 
@@ -16,6 +17,17 @@ The git push command is used to upload local repository content to a remote repo
 
 =======
 <<<<<<< HEAD
+=======
+
+## git clone
+This command is used to create a copy of a Git repository  on your local machine, including all its files, commit history, and branches. It allows you to download and have a complete, editable version of the repository that you can work with and contribute to.
+
+### Important Flags
+- ```--depth``` This flag allows you to specify the number of commits to include in the cloned repository, which can make the cloning process faster and use less disk space. 
+- ```--branch``` This flag lets you specify a particular branch to clone instead of the default branch.
+
+
+>>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
 ## git stash 
 git-stash - Stash the changes in a dirty working directory away
 
@@ -24,8 +36,12 @@ git-stash - Stash the changes in a dirty working directory away
 ```apply``` Like ```pop```, but do not remove the state from the stash list. 
 ```clear``` Remove all the stash entries. 
 ```list``` List the stash entries that you currently have.
+<<<<<<< HEAD
 =======
 >>>>>>> refs/remotes/origin/main
+=======
+
+>>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
 ## Make git add, git commit, git push --> Automatic in one command
 # touch .bashrc
 # nano .bashrc
@@ -43,7 +59,14 @@ git-stash - Stash the changes in a dirty working directory away
 #now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> b457903d8eaeff53a5cc6273fe7379fadea00092
 >>>>>>> refs/remotes/origin/main
+=======
+
+### Usage: git reset [file]  
+
+This command unstages the file, but it preserves the file contents.
+>>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
