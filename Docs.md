@@ -1,14 +1,23 @@
-# Useful git commands
+# git init
 
-## git init
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
+
+## Important Flags
+
+- ```--bare``` Create a bare repository. If GIT_DIR environment is not set, it is set to the current working directory.
+
+---
+
+- ```--shared[=(false|true|umask|group|all|world|everybody|<perm>)]``` Specify that the Git repository is to be shared amongst several users. This allows users belonging to the same group to push into that repository. When specified, the config variable "core.sharedRepository" is set so that files and directories under $GIT_DIR are created with the requested permissions. When not specified, Git will use permissions reported by umask(2).
+
+
+## git push
+The git push command is used to upload local repository content to a remote repository.
+
 ### Important Flags
-- ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
-- ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
+- ```-u``` or ```--set-upstream``` Set the upstream.
 
-
-<<<<<<< HEAD
 ## git merge
 This command merges changes from one branch into another branch.
 =======
@@ -29,6 +38,25 @@ git-stash - Stash the changes in a dirty working directory away
 ```clear``` Remove all the stash entries. 
 ```list``` List the stash entries that you currently have.
 
+# Make git add, git commit, git push --> Automatic in one command
+### touch .bashrc
+### nano .bashrc
+###
+### function doit() {
+### 	git add .
+###	git commit -a -m "$1"
+###	git push
+### }
+###
+###(type Strg + x)
+###(type y)
+###(hit enter)
+###type in source .bashrc
+##now you can do ...  doit "a new message"
+##when you start your bash again you must do the ```source .bashrc``` again!
+
+
+
 ## Make git add, git commit, git push --> Automatic in one command
 # touch .bashrc
 # nano .bashrc
@@ -45,4 +73,7 @@ git-stash - Stash the changes in a dirty working directory away
 #type in source .bashrc
 #now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
->>>>>>> ea99cd602a89b7d86ef7bf0e8db987d508686006
+
+### Usage: git reset [file]  
+
+This command unstages the file, but it preserves the file contents.
