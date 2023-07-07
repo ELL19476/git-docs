@@ -3,6 +3,12 @@
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
 ---
+## git commit
+This command performs a commit, it's used to save changes to the local repository.
+
+### Important Flags
+- ```-m``` Stands for "message". Is used to add a commit message to a commit.
+- ```-a``` Tells Git to add all files that have been modified and then commit them. 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
