@@ -36,58 +36,24 @@ git-stash - Stash the changes in a dirty working directory away
 ```apply``` Like ```pop```, but do not remove the state from the stash list. 
 ```clear``` Remove all the stash entries. 
 ```list``` List the stash entries that you currently have.
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-# Make git add, git commit, git push --> Automatic in one command
+## Make git add, git commit, git push --> Automatic in one command
 ### touch .bashrc
 ### nano .bashrc
 ###
 ### function doit() {
 ### 	git add .
-###	git commit -a -m "$1"
-###	git push
+### 	git commit -a -m "$1"
+###	    git push
 ### }
 ###
-###(type Strg + x)
-###(type y)
-###(hit enter)
-###type in source .bashrc
-##now you can do ...  doit "a new message"
-##when you start your bash again you must do the ```source .bashrc``` again!
-
-
-=======
-=======
->>>>>>> refs/remotes/origin/main
->>>>>>> c6148d1096c94bf9b42a7f59350c6df818fe2fd7
-=======
-
->>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
-## Make git add, git commit, git push --> Automatic in one command
-# touch .bashrc
-# nano .bashrc
-
-# function doit() {
-# 	git add .
-#	git commit -a -m "$1"
-#	git push
-# }
-#
-#(type Strg + x)
-#(type y)
-#(hit enter)
-#type in source .bashrc
-#now you can do ...  doit "a new message"
+### (type Strg + x)
+### (type y)
+### (hit enter)
+### type in source .bashrc
+### now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
-<<<<<<< HEAD
->>>>>>> ea99cd602a89b7d86ef7bf0e8db987d508686006
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> b457903d8eaeff53a5cc6273fe7379fadea00092
 >>>>>>> refs/remotes/origin/main
 =======
 
