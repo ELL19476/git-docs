@@ -1,28 +1,115 @@
-# Useful git commands
+# git init
 
-## git init
 This command creates an empty Git repository on your local machine. So, basically a ```.git``` directory.
 
+<<<<<<< HEAD
 ## git checkout
 Switch branches or restore working tree files
+=======
+---
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Important Flags
+
+- ```--bare``` Create a bare repository. If GIT_DIR environment is not set, it is set to the current working directory.
+
+---
+
+- ```--shared[=(false|true|umask|group|all|world|everybody|<perm>)]``` Specify that the Git repository is to be shared amongst several users. This allows users belonging to the same group to push into that repository. When specified, the config variable "core.sharedRepository" is set so that files and directories under $GIT_DIR are created with the requested permissions. When not specified, Git will use permissions reported by umask(2).
+
+---
+=======
+<<<<<<< HEAD
+## git push
+The git push command is used to upload local repository content to a remote repository.
+>>>>>>> 2dd91e5be431c7c9429f55e800099249cc427d96
 
 ### Important Flags
-- ```-q``` Stands for "quiet". Only print error and warning messages, nothing else.
-- ```-b``` Use the specified name for the initial branch in the newly created repository. (e.g. "main" instead of the default "master")
+- ```-u``` or ```--set-upstream``` Set the upstream.
 
+=======
+<<<<<<< HEAD
+>>>>>>> 4c204217c461ba83d1195c26e726da70225bba78
+=======
+
+## git clone
+This command is used to create a copy of a Git repository  on your local machine, including all its files, commit history, and branches. It allows you to download and have a complete, editable version of the repository that you can work with and contribute to.
+
+### Important Flags
+- ```--depth``` This flag allows you to specify the number of commits to include in the cloned repository, which can make the cloning process faster and use less disk space. 
+- ```--branch``` This flag lets you specify a particular branch to clone instead of the default branch.
+
+
+>>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
+## git stash 
+git-stash - Stash the changes in a dirty working directory away
+
+### Important Optionen
+```pop``` Remove a single stashed state from the stash list and apply it on top of the current working tree state,
+```apply``` Like ```pop```, but do not remove the state from the stash list. 
+```clear``` Remove all the stash entries. 
+```list``` List the stash entries that you currently have.
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+# Make git add, git commit, git push --> Automatic in one command
+### touch .bashrc
+### nano .bashrc
+###
+### function doit() {
+### 	git add .
+###	git commit -a -m "$1"
+###	git push
+### }
+###
+###(type Strg + x)
+###(type y)
+###(hit enter)
+###type in source .bashrc
+##now you can do ...  doit "a new message"
+##when you start your bash again you must do the ```source .bashrc``` again!
+
+
+=======
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> c6148d1096c94bf9b42a7f59350c6df818fe2fd7
+=======
+
+>>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
 ## Make git add, git commit, git push --> Automatic in one command
-touch .bashrc
-nano .bashrc
+# touch .bashrc
+# nano .bashrc
 
-function doit() {
-	git add .
-	git commit -a -m "$1"
-	git push
-}
-
-(type Strg + x)
-(type y)
-(hit enter)
-type in source .bashrc
-now you can do ...  doit "a new message"
+# function doit() {
+# 	git add .
+#	git commit -a -m "$1"
+#	git push
+# }
+#
+#(type Strg + x)
+#(type y)
+#(hit enter)
+#type in source .bashrc
+#now you can do ...  doit "a new message"
 ### when you start your bash again you must do the ```source .bashrc``` again!
+<<<<<<< HEAD
+>>>>>>> ea99cd602a89b7d86ef7bf0e8db987d508686006
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> b457903d8eaeff53a5cc6273fe7379fadea00092
+>>>>>>> refs/remotes/origin/main
+=======
+
+### Usage: git reset [file]  
+
+This command unstages the file, but it preserves the file contents.
+>>>>>>> ee1fc3865f92e97ac33fa138bb55cd22d9b328a5
+<<<<<<< HEAD
+=======
+>>>>>>> c6148d1096c94bf9b42a7f59350c6df818fe2fd7
+>>>>>>> 4c204217c461ba83d1195c26e726da70225bba78
